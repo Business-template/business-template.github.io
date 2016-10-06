@@ -1,0 +1,50 @@
+.pricing__wrap{
+	.container-fluid;
+
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+
+.pricing__inner-wrap{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap:wrap;
+}
+
+.pricing__item{
+	width:230px;
+	margin:25px 15px;
+	border:1px solid #E9EFF0;
+	text-align: center;
+	box-shadow:0 0 40px rgba(247, 148, 29, .4);	
+
+	position: relative;
+}
+
+.pricing__item-price{
+	color: #000;
+	border-top:1px solid #E9EFF0;
+	border-bottom:1px solid #E9EFF0;
+
+	& span{
+		color: @orange-hue;
+	}
+}
+
+.pricing__item-advantage{
+	min-height:190px;
+	padding: 30px 0 0 0;
+}
+
+.pricing__recommend{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.pricing__item--business{
+	box-shadow:0 0 40px rgba(41, 194, 225, .6);
+}

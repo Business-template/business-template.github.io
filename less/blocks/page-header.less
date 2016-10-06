@@ -1,0 +1,204 @@
+.page-header{
+
+}
+
+.page-header__header-top{
+	background-color: @footer-color;
+}
+
+.page-header__header-top-wrap{
+	.container-fluid;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	p{
+		text-transform: uppercase;
+		padding: 10px 0;
+		margin: 0;
+		color:#939FA4;
+		text-align: right;
+		font-size: .8em;
+		min-width:200px;
+	}
+
+	span{
+		color: #6B787E;
+	}
+}
+
+.page-header__content{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.page-header__content--index{
+	background-image: url(../img/header-main-img.jpg);
+}
+
+.page-header__content--about-us{
+	background-image: url(../img/about-us-header-img.jpg);
+	background-position: 0 0;
+}
+
+.page-header__content--portfolio{
+	background-image: url(../img/portfolio-main-img.jpg);
+	background-position: 0 0;
+}
+
+.page-header__content--news{
+	background-image: url(../img/news-main-img.jpg);
+}
+
+.page-header__content--services{
+	background-image: url(../img/services-main-img.jpg);
+}
+
+.page-header__content-wrap{
+
+	.container-fluid;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.page-header__content-wrap--index{
+	height: 700px;
+}
+
+.page-header__content-wrap--about-us,
+.page-header__content-wrap--news,
+.page-header__content-wrap--portfolio,
+.page-header__content-wrap--services{
+	height: 300px;
+}
+
+.page-header__content-text{
+	margin-top: 80px;
+	text-align: center;
+
+	& h1,
+	& h3{
+		text-transform: uppercase;
+		color: #e3fffd;
+		text-shadow:0 0 10px rgba(0,0,0, 1);
+		margin: 10px 0 25px  0;
+	}
+
+	& h1{
+		font-size:3em;
+	}
+
+	& h3{
+		font-weight:normal;
+		margin: 10px 0 0 0;
+	}
+}
+
+.page-header__newsletter{
+	.container-fluid;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	background-color: #404143;
+	padding: 15px;
+}
+
+.page-header__newsletter-text{
+	flex-grow: 1;
+}
+
+.page-header__newsletter-text-1{
+	background-color: @orange-hue;
+	font-size:.8em;
+	color: #fff;
+	padding: 2px;
+}
+
+.page-header__newsletter-text-2{
+	font-size:1.2em;
+	color: #fff;
+	font-weight:bold;
+}
+
+.page-header__newsletter-colon{
+	flex-grow: 1;
+
+	font-size: 2em;
+	color: #fff;
+}
+
+.page-header__newsletter-form{
+	flex-grow: 3;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	& input{
+		width:33%;
+		padding: 10px 0;
+		text-align: center;
+	}
+}
+
+@media @tablet-width{
+	.page-header__no-in-tablet{
+		display: none;
+	}
+}
+
+@media @mobile-width-only{
+	.page-header__content-wrap{
+		padding: 30px auto;
+	}
+
+	.page-header__content{
+		background-image: none;
+		background-color: #373f6b;
+	}
+
+	.page-header__content-wrap{
+		height: auto;
+		display: flex;
+		flex-direction: column;
+
+		margin: 0;
+		width: 95%;
+	}
+
+	.page-header__newsletter{
+		background-color: #373f6b;
+	}
+
+	.page-header__newsletter-text{
+		margin-right: 20px;
+	}
+	
+	.page-header__newsletter-form{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+
+		& input,
+		& button{
+			flex-grow: 1;
+			width:auto;
+			padding: 10px 0;
+			text-align: center;
+		}
+	}
+
+
+}
+
+////////////////////////////////////
+//////////ABOUT US//////////////////
+////////////////////////////////////
+
+

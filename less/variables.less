@@ -1,0 +1,23 @@
+@mobile-width-only: ~"(max-width:768px)";
+@tablet-width: ~"(max-width:959px)";
+@desktop-width: ~"(min-width:960px)";
+
+@footer-color: #1F2629;
+@blue-hue: #29C2E1;
+@orange-hue: #F7941D;
+
+.container-fluid{
+	width:auto;
+
+	@media @tablet-width{
+		width:95%;
+		margin:0 auto;
+		max-width:960px;
+	}
+
+	@media @desktop-width{
+		width:90%;
+		margin:0 auto;
+		max-width:1170px;
+	}
+}

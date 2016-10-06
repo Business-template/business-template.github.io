@@ -1,0 +1,67 @@
+.blog-post__wrap{
+	.container-fluid;
+}
+
+.blog-post__img-block{
+	background-color: #8D8D8D;
+	background-image: url(../img/business-people.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center -110px;
+	width:100%;
+	height:350px;
+
+	position: relative;
+}
+
+.blog-post__info{
+	padding:40px;
+}
+
+.blog-post__heading{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	& h3{
+		margin: 0;
+	}
+}
+
+.blog-post__text{
+	font-size:.9em;
+	margin: 25px 0;
+}
+
+@media @mobile-width-only{
+	.blog-post__info{
+		padding-top: 15px;
+	}
+
+	.blog-post__img-block{
+		background-position: center center;
+	}
+
+	.blog-post__heading{
+		display: flex;
+		flex-direction: column;
+
+		& h3{
+			order:2;
+		}
+	}
+
+	.blog-post__author-comments{
+		padding-bottom: 25px;
+		order:1;
+		font-size: .7em;
+
+		& span:first-child{
+			margin-left: 0;
+		}
+
+		& span:last-child{
+			margin-left: 10px;
+		}
+	}
+}

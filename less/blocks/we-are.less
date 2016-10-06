@@ -1,0 +1,56 @@
+.we-are__wrap{
+	.container-fluid;
+
+	display: flex;
+	flex-direction: row;
+}
+
+.we-are__img-block{
+	width: 40%;
+	position: relative;
+	padding:0 10px;
+}
+
+.we-are__img-block-inner-block{
+	background-image: url(../img/who-are-we.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 240px;
+	width:100%;
+}
+
+.we-are__text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	width: 60%;
+	padding:0 30px;
+
+	& p{
+		font-size: .96em;
+		margin: 0;
+	}
+}
+
+@media @mobile-width-only{
+	.we-are__wrap{
+		flex-direction: column;
+	}
+
+	.we-are__img-block{
+		width:100%;
+		padding: 0;
+	}
+
+	.we-are__text{
+		width:92%;
+		margin: 0 auto;
+		padding: 0;
+
+		& p{
+			padding: 30px 0
+		}
+	}
+}

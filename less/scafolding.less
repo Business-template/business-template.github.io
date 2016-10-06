@@ -1,0 +1,49 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'AMG Anahit';
+}
+
+body > section{
+	padding:80px 0;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	border:1px solid red;
+}
+body input:required:valid,
+body textarea:required:valid {
+	border:1px solid green;
+}
+
+html{
+	transition:all .8s ease-in-out;
+}
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+@media @mobile-width-only{
+	.no-in-mobile{
+		display: none;
+	}
+}
+
+.no-in-tablet-desctop{
+	display: none;
+}

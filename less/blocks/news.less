@@ -1,0 +1,124 @@
+.news-page{
+	.container-fluid;
+}
+
+.news-page__heading{
+	& h1,
+	& h4{
+		margin: 0;
+	}
+
+	& h4{
+		font-weight: normal;
+	}
+}
+
+.news-page__news-wrap{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 70px 0;
+}
+
+.news-page__news-item{
+	display: flex;
+	flex-direction: column;
+
+	width: 30%;
+	min-width:275px;
+	max-width:320px;
+	margin: 0 5px;
+	padding: 0 auto;
+	border:1px solid #fff;
+}
+
+.news-page__item-img-block{
+	background-size: cover;
+	background-position: center center;
+	width:100%;
+	height:250px;
+}
+
+.news-page__item-img-block-1{
+	background-image: url(../img/news-img/news-1.jpg);
+}
+
+.news-page__item-img-block-2{
+	background-image: url(../img/news-img/news-2.jpg);
+}
+
+.news-page__item-img-block-3{
+	background-image: url(../img/news-img/news-3.jpg);
+}
+
+.news-page__item-img-block-4{
+	background-image: url(../img/news-img/news-4.jpg);
+}
+
+.news-page__item-img-block-5{
+	background-image: url(../img/news-img/news-5.jpg);
+}
+
+.news-page__item-img-block-6{
+	background-image: url(../img/news-img/news-6.jpg);
+}
+
+.news-page__item-img-block-7{
+	background-image: url(../img/news-img/news-7.jpg);
+}
+
+.news-page__item-img-block-8{
+	background-image: url(../img/news-img/news-8.jpg);
+}
+
+.news-page__item-img-block-9{
+	background-image: url(../img/news-img/news-9.jpg);
+}
+
+
+.news-page__item-img-block--arrow-down{
+	order:2;
+}
+
+.news-page__item-context{
+	position: relative;
+	background-color: #E5EFF1;
+	text-align: center;
+	padding: 15px;
+
+	// oreder
+
+	& h3{
+		margin: 30px 0 10px 0;
+	}
+	& p{
+		font-size: .9em;
+	}
+}
+
+.news-page__item-date{
+	& h1,
+	& h4{
+		margin: 0px;
+	}
+}
+
+.news-page__triangle--up{
+	position: absolute;
+	top:-45px;
+	left: 120px;
+
+	width: 0px;
+	border:20px solid transparent;
+	border-bottom:25px solid #E5EFF1;
+}
+.news-page__triangle--down{
+	position: absolute;
+	bottom:-45px;
+	left: 120px;
+
+	width: 0px;
+	border:20px solid transparent;
+	border-top:25px solid #E5EFF1;
+}
